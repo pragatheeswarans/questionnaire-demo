@@ -1,0 +1,13 @@
+<ul class="group">
+  {{#each this.checkboxes as |checkbox|}}
+    <label role="checkbox" class={{@labelClass}} aria-checked={{checkbox.checked}}>
+      <Input
+        @type="checkbox"
+        @checked={{checkbox.checked}}
+        data-test-id={{concat "checkbox-" checkbox.value}}
+        {{on "click" (fn this.updateSelection checkbox.value)}}
+      />
+      {{checkbox.label}}
+    </label>
+  {{/each}}
+</ul>

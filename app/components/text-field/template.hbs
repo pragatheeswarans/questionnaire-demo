@@ -1,0 +1,21 @@
+<div class="auto-scroll-y">
+  {{#if @isTextArea}}
+    <Textarea
+      rows="10"
+      cols="35"
+      @value={{this.value}}
+      @placeholder="Type your answer here"
+      {{did-insert this.onInsert}}
+      {{on "keyup" (fn @onChange this.value)}}
+    />
+  {{else}}
+    <Input
+      @type="text"
+      @value={{this.value}}
+      @placeholder="Type your answer here"
+      {{did-insert this.onInsert}}
+      {{on "keyup" this.onKeyUp}}
+      data-test-id="text-field"
+    />
+  {{/if}}
+</div>

@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+  font-family: @base-font-family;
+}
+ul {
+  padding: 0;
+}
+.container.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  border: 1px solid @base-border-color;
+  background-color: @base-background-color;
+}
+.container-header {
+  height: 75px;
+  border-bottom: 1px solid @base-border-color;
+  padding: 0 20px;
+}
+.nav-item {
+  color: @base-font-color;
+  text-decoration: none;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.container-body {
+  padding: 10px 10px 30px
+}
+.description {
+  padding: 0 10px;
+  line-height: 1.4;
+}
+
+.card {
+  .flex;
+  width: 75%;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid @base-border-color;
+  border-radius: 8px;
+}
+.card-logo {
+  .flex;
+  .items-center;
+  .justify-center;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  border-radius: 100%;
+  border: 1px solid @base-border-color;
+  background: linear-gradient(60deg, #e89d9e, #757fe6);
+}
+.card-logo-content {
+  font-size: 40px;
+}
+.card-content-header {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.card-content-desc {
+  margin-top: 0;
+  color: #f2f2f2;
+  font-size: @base-font-size;
+}
+
+.form-field-label {
+  .block;
+  margin-bottom: 10px;
+  &.option {
+    .cursor-pointer;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #333;
+  }
+}
+
+.primary-btn {
+  .cursor-pointer;
+  margin-right: 10px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: @base-font-size;
+  background-color: #efeeee;
+  letter-spacing: 0.3px;
+  &:focus, &:hover {
+    outline: none;
+    background-color: #fff;
+  }
+}
+
+input[type="text"] {
+  width: 300px;
+  margin: 15px 0;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: @base-font-size;
+  border-bottom: 1px solid @base-border-color;
+  background-color: @base-background-color;
+  color: @base-font-color;
+}
+
+textarea {
+  margin: 15px 0;
+  padding: 5px;
+  font-size: @base-font-size;
+  background-color: @base-background-color;
+  color: @base-font-color;
+}
+
+.icon.left-arrow {
+  transform: rotate(180deg);
+}
+
+.banner {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  left: 0;
+  padding: 20px;
+  background: #009688;
+  text-align: center;
+  transition: all 300ms ease-in;
+  &.mod-show {
+    top: 0;
+  }
+  &.mod-failure {
+    background: #f24e4e;
+  }
+}
+
+.about-wrapper {
+  margin: 30px;
+}
+.about-header {
+  margin-bottom: 30px;
+}
+.about-list {
+  padding: 5px 25px;
+  li {
+    line-height: 1.5;
+  }
+}

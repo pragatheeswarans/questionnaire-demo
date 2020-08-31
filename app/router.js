@@ -7,4 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('about');
+  this.route('questionnaires', function() {
+    this.route('details', { path: '/:id' });
+  });
 });

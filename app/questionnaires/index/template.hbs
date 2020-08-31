@@ -1,0 +1,19 @@
+<h2 class="text-center">Select a Questionnaire to start answering</h2>
+<div class="flex flex-column items-center">
+  {{#each @model as |questionnaire|}}
+    <div
+      role="link"
+      class="card flex-row items-center cursor-pointer"
+      data-test-id={{concat "questionnaire-" questionnaire.id}}
+      {{on "click" (fn this.openQuestionnaire questionnaire)}}
+    >
+      <div class="card-logo">
+        <div class="card-logo-content">{{get questionnaire.name 0}}</div>
+      </div>
+      <div class="card-content flex flex-column">
+        <h3>{{questionnaire.name}}</h3>
+        <p class="card-content-desc">{{questionnaire.description}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>

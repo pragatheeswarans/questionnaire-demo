@@ -1,14 +1,24 @@
-# questionnaire-demo
+[![Build Status](https://travis-ci.com/pragatheeswarans/questionnaire-demo.svg?token=RMGi8FKA3gRCCgJxHN19&branch=master)](https://travis-ci.com/pragatheeswarans/questionnaire-demo)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Coding Challenge Questionnaire
+
+A small questionnaire Web Application similar to what [Typeform.com](https://www.typeform.com/#home-examples) offers.
+
+You can preview the [demo here](https://pragatheeswarans.github.io/demo)
+
+## Requirements
+- As a user I can answer questions very swiftly so that I don’t feel like I am wasting my time
+- Your questionnaire is based on a JSON that the frontend uses to drive the questions
+- As a user I can go back to a previous question without losing the answers I have given in a current
+question
+- Mobile First, use some SVG, use JS ES 6-7 features, good conventions for CSS
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
+* [Node.js](https://nodejs.org/) (with npm/yarn)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
@@ -16,7 +26,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * `cd questionnaire-demo`
-* `npm install`
+* `yarn install`
 
 ## Running / Development
 
@@ -46,7 +56,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+The demo is deployed in a separate public repo (to use Github Pages) [here](https://github.com/pragatheeswarans/demo/).
+Since this is deployed using Github Pages, only index route will be loaded. Refreshing the app with a different route will result in 404. Although this will work well is localhost or if hosted in a domain.
 
 ## Further Reading / Useful Links
 

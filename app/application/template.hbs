@@ -1,0 +1,21 @@
+<div class="container wrapper m-auto">
+  <div
+    class={{concat "banner mod-" this.bannerService.messageType (if this.bannerService.showBanner " mod-show")}}
+  >
+    {{this.bannerService.message}}
+  </div>
+
+  <header class="container-header flex items-center">
+    <LinkTo @route="questionnaires" @title="Home">
+      {{inline-svg "questionnaire" class="icon icon-lg"}}
+    </LinkTo>
+    <div class="ml-auto">
+      <LinkTo @route="questionnaires" @title="Home" class="nav-item">Home</LinkTo>
+      <LinkTo @route="about" @title="About" class="nav-item">About</LinkTo>
+    </div>
+  </header>
+
+  <section class="container-body flex flex-column">
+    {{outlet}}
+  </section>
+</div>
