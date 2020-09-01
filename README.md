@@ -4,7 +4,7 @@
 
 A small questionnaire Web Application similar to what [Typeform.com](https://www.typeform.com/#home-examples) offers.
 
-You can preview the [demo here](https://pragatheeswarans.github.io/demo)
+You can preview the [demo here](https://pragatheeswarans.github.io/questionnaire-demo/)
 
 ## Requirements
 - As a user I can answer questions very swiftly so that I don’t feel like I am wasting my time
@@ -56,8 +56,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-The demo is deployed in a separate public repo (to use Github Pages) [here](https://github.com/pragatheeswarans/demo/).
-Since this is deployed using Github Pages, only index route will be loaded. Refreshing the app with a different route will result in 404. Although this will work well is localhost or if hosted in a domain.
+The demo is deployed using Github Pages from a separate branch.
+Because of this, only index route will be loaded. Refreshing the app with a different route will result in 404. Although this will work well is localhost or if hosted in a domain.
 
 ## Further Reading / Useful Links
 
